@@ -1,0 +1,10 @@
+{
+  "_comment": "Permisos mínimos compatibles con el esquema original. Las reglas de edición segura, TypeScript, documentación oficial, lectura modular, contexto compacto y registro de validaciones están en SKILL.md; este archivo no amplía permisos para instalar, descargar, construir o desplegar.",
+  "permissions": {
+    "allow": [
+      "Bash(python *astro-premium-landing/scripts/verify_project.py*)",
+      "Bash(python3 *astro-premium-landing/scripts/verify_project.py*)",
+      "Bash(py *astro-premium-landing/scripts/verify_project.py*)"
+    ]
+  }
+}

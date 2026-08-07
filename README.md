@@ -22,21 +22,37 @@ Incluye:
 - Compatibilidad con Windows.
 - Despliegue en distintos proveedores.
 
+### omnia-aesthetic
+
+Skill de identidad visual para reproducir, adaptar y auditar la estética digital de OMNIA en landings, sitios, interfaces, presentaciones y piezas de marca.
+
 ## Instalación
 
+### astro-premium-landing
+
 ```bash
-npx skills add https://github.com/TU-USUARIO/omnia-agent-skills --skill astro-premium-landing
+npx skills add https://github.com/astrolicious/agent-skills --skill astro-premium-landing
 ```
 
-## También puede utilizarse el formato corto:
+### omnia-aesthetic
 
+```bash
+npx skills add https://github.com/astrolicious/agent-skills --skill omnia-aesthetic
 ```
-npx skills add TU-USUARIO/omnia-agent-skills --skill astro-premium-landing
+
+## También puede utilizarse el formato corto
+
+```bash
+npx skills add astrolicious/agent-skills --skill astro-premium-landing
+npx skills add astrolicious/agent-skills --skill omnia-aesthetic
 ```
+
 ## Actualización
-```
+
+```bash
 npx skills update
 ```
+
 ## Licencia
 
 Consulta el archivo LICENSE.

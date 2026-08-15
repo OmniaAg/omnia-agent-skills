@@ -1,4 +1,20 @@
-# Patrones de interfaz OMNIA
+# Patrones editoriales de interfaz OMNIA
+
+Aplicar este módulo a landings, sitios informativos, portafolios y experiencias donde una narrativa se desarrolla en varias secciones. Si la función principal es concentrar enlaces, orientar o facilitar contacto dentro de un único shell compacto, usar [el patrón Linktree](linktree-pattern.md) en su lugar.
+
+## Contenido
+
+1. [Composición general](#composición-general)
+2. [Encabezados de sección](#encabezados-de-sección)
+3. [Navegación](#navegación)
+4. [Botones y enlaces de acción](#botones-y-enlaces-de-acción)
+5. [Cards y superficies](#cards-y-superficies)
+6. [Fondos y motivos](#fondos-y-motivos)
+7. [Jerarquía y ritmo](#jerarquía-y-ritmo)
+8. [Responsive](#responsive)
+9. [Movimiento](#movimiento)
+10. [Accesibilidad visual](#accesibilidad-visual)
+11. [Señales de deriva estética](#señales-de-deriva-estética)
 
 ## Composición general
 

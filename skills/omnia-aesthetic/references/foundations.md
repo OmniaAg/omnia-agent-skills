@@ -1,5 +1,16 @@
 # Fundamentos visuales de OMNIA
 
+## Contenido
+
+1. [Cómo interpretar las reglas](#cómo-interpretar-las-reglas)
+2. [Tesis visual](#tesis-visual)
+3. [Color](#color)
+4. [Tipografía](#tipografía)
+5. [Espacio y retícula](#espacio-y-retícula)
+6. [Geometría, bordes y profundidad](#geometría-bordes-y-profundidad)
+7. [Assets y tratamiento de imagen](#assets-y-tratamiento-de-imagen)
+8. [Qué no debe convertirse en regla](#qué-no-debe-convertirse-en-regla)
+
 ## Cómo interpretar las reglas
 
 - **Núcleo:** identidad oficial; cambia solo si existe un manual posterior.
@@ -32,7 +43,7 @@ El balance es neutro primero. En cada sección elige uno o dos acentos; reserva 
 
 ### Neutros de interfaz — patrón repetido
 
-Usa estos apoyos sin tratarlos como nuevos colores de marca: blanco `#FFFFFF`, superficie suave `#F7F6F8`, oscuro elevado `#1D1D1D`/`#242424`, texto suave `#414141`, texto secundario `#666666` y texto inverso secundario `#C8C8C8`.
+Usa estos apoyos sin tratarlos como nuevos colores de marca: blanco `#FFFFFF`, superficie suave `#F7F6F8`, oscuro elevado principal `#1D1D1D`, oscuro suave secundario `#242424`, texto suave `#414141`, texto secundario `#666666` y texto inverso secundario `#C8C8C8`. No intercambiar los dos oscuros sin una razón de jerarquía: el principal separa una superficie del canvas Negro OMNIA; el secundario crea un nivel anidado cuando realmente hace falta.
 
 Los divisores se construyen por transparencia:
 
@@ -105,7 +116,7 @@ Parte de una unidad de `.25rem` y usa saltos `1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 2
 
 Anchos de referencia: contenedor `80rem`, ancho `90rem`, contenido `68rem`, texto `45rem`, texto estrecho `36rem`.
 
-El espacio negativo es parte de la identidad: separa secciones con amplitud, evita densidad uniforme y permite que títulos, imágenes y CTA respiren.
+El espacio negativo es parte de la identidad, pero es una **relación**, no padding grande en todas partes. Abrir aire entre grupos y comprimir elementos de una misma familia —por ejemplo, filas de un índice— para hacer visible la jerarquía. No aplicar mecánicamente los tokens de sección a un micrositio compacto.
 
 ## Geometría, bordes y profundidad
 

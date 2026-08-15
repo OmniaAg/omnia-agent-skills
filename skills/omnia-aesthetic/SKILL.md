@@ -1,6 +1,6 @@
 ---
 name: omnia-aesthetic
-description: Reproduce, adapta y audita la identidad visual digital de OMNIA Agencia —“Ingeniería Creativa para Humanos”— en landings, sitios, interfaces, presentaciones y piezas de marca. Usa esta skill siempre que un proyecto deba verse inequívocamente OMNIA, que se pidan sus colores, tipografías, componentes, dirección de arte o fidelidad visual, incluso si el usuario no menciona la palabra “estética”.
+description: Reproduce, adapta y audita la identidad visual digital de OMNIA Agencia —“Ingeniería Creativa para Humanos”— en landings, sitios, interfaces, link-in-bio, directorios de enlaces, micrositios compactos, páginas de contacto, presentaciones y piezas de marca. Usa esta skill siempre que un proyecto deba verse inequívocamente OMNIA o se pidan sus colores, tipografías, componentes, dirección de arte o fidelidad visual, incluso si el usuario no menciona la palabra “estética”.
 ---
 
 # Estética OMNIA
@@ -17,20 +17,23 @@ Un Manual de Identidad oficial más reciente prevalece sobre esta skill. Ante un
 
 ## Carga modular
 
-1. Lee siempre [fundamentos visuales](references/foundations.md).
-2. Lee [patrones de interfaz](references/interface-patterns.md) al diseñar, implementar o auditar UI digital.
-3. No cargues módulos ajenos al tipo de entrega.
+1. Leer siempre [fundamentos visuales](references/foundations.md).
+2. Clasificar el formato antes de componer y cargar **un solo módulo de patrón**:
+   - landing, sitio informativo, portafolio o experiencia editorial de varias secciones → [patrones editoriales de interfaz](references/interface-patterns.md);
+   - link-in-bio, Linktree, directorio de enlaces, micrositio compacto o página de contacto centrada en acceso directo → [patrón Linktree](references/linktree-pattern.md);
+   - pieza no interactiva o identidad sin UI → ningún módulo adicional salvo que el formato lo exija.
+3. Cargar ambos módulos solo si el artefacto combina de verdad una narrativa multisección con un hub compacto. Declarar qué módulo gobierna cada región y no mezclar sus componentes por defecto.
 
 ## Flujo de trabajo
 
-1. **Confirma el contexto.** Identifica formato, audiencia, contenido, soportes, assets oficiales disponibles y restricciones de accesibilidad o rendimiento.
-2. **Declara la tesis.** Resume la dirección como “estructurada + humana”: orden editorial y tipografía geométrica sostenidos por texto cálido, curvas orgánicas y acentos fluidos.
-3. **Fija los fundamentos.** Implementa primero paleta, tipografía, contenedores, espaciado, radios y movimiento. No improvises colores o familias.
-4. **Compón con jerarquía.** Usa una masa visual dominante, amplio vacío, títulos cortos y alternancia controlada de fondos. Prioriza uno o dos acentos por región.
-5. **Elige patrones por función.** No conviertas todo en cards: combina superficies, filas editoriales, divisores, bloques de prueba y composiciones asimétricas.
-6. **Integra activos reales.** Mantén el trabajo de clientes en marcos neutros; deja que conserve su identidad sin recolorearlo para “hacerlo OMNIA”.
-7. **Añade movimiento al final.** Usa desplazamientos cortos, revelados suaves y morfología lenta solo donde aporten continuidad o firma.
-8. **Audita la fidelidad.** Aplica la lista de control antes de entregar.
+1. **Confirmar el contexto.** Identificar formato, objetivo principal, audiencia, contenido, assets oficiales y restricciones de accesibilidad o rendimiento.
+2. **Clasificar la experiencia.** Distinguir una narrativa que explica o persuade a través de secciones de un hub compacto que prioriza orientar, enlazar o contactar.
+3. **Declarar la tesis.** Resumir la dirección como “estructurada + humana”: orden editorial y tipografía geométrica sostenidos por texto cálido y acentos orgánicos controlados.
+4. **Fijar los fundamentos.** Implementar primero paleta, tipografía, espaciado, geometría y contraste. No improvisar colores o familias.
+5. **Aplicar el patrón elegido.** Respetar su anatomía, densidad y responsive; adaptar el contenido sin importar patrones del otro módulo.
+6. **Integrar activos reales.** Localizar logos, iconos, fuentes y materiales oficiales. Mantener intacto el trabajo de clientes.
+7. **Añadir movimiento al final.** Usarlo solo donde refuerce continuidad, estado o firma.
+8. **Auditar la fidelidad.** Verificar fundamentos, patrón, accesibilidad y comportamiento responsive antes de entregar.
 
 ## Contrato de salida
 
@@ -43,28 +46,21 @@ Para una especificación visual, entrega como mínimo:
 - comportamiento responsive y de movimiento reducido;
 - desviaciones justificadas y assets oficiales pendientes.
 
-Para una implementación, conserva el stack y el sistema CSS del proyecto receptor. Traduce los valores de esta skill a tokens semánticos; no impongas un framework, una librería de animación o una arquitectura nueva.
+Para una implementación, conservar el stack y el sistema CSS del proyecto receptor. Traducir los valores a tokens semánticos; no imponer un framework, una librería de animación o una arquitectura nueva.
 
-## Guardrails
+## Guardrails de orquestación
 
-- Mantén Negro OMNIA y Blanco cálido como base; los cuatro acentos no compiten simultáneamente en cada componente.
-- Usa Lexend para estructura y Quicksand para humanidad. No añadas fuentes por variedad.
-- Evita estética de SaaS o IA genérica: partículas, neón, glitches, grids de cards repetitivos, glassmorphism ubicuo y glows intensos.
-- No uses neumorfismo. La profundidad proviene de contraste, capas translúcidas, bordes finos y algún degradado controlado.
-- Evita sombras marcadas; las superficies OMNIA son principalmente planas y delineadas.
-- No deformes, recortes, separes, contornees ni añadas efectos a logos oficiales.
-- No llenes el vacío con decoración. Las formas lava, grids, órbitas y marcas de agua son acentos, no fondos obligatorios.
-- Mantén foco visible, contraste, objetivos táctiles razonables y `prefers-reduced-motion`.
+- No convertir una implementación de referencia en plantilla universal ni elevar coincidencias accidentales a reglas de marca.
+- No completar un Linktree con hero, header fijo, cards, blobs o secciones de landing que el contenido no necesita.
+- No reducir una landing narrativa a un directorio compacto solo para reutilizar el patrón Linktree.
+- No inventar logos, iconos sociales, enlaces, estados “próximamente”, pruebas de cliente ni datos de contacto.
+- No sacrificar semántica, foco visible, contraste, objetivos táctiles ni movimiento reducido para igualar una captura.
 
 ## Lista de control
 
-- ¿La pieza se siente creativa y ordenada a la vez?
-- ¿Negro/blanco dominan y cada región limita sus acentos?
-- ¿Lexend organiza y Quicksand humaniza?
-- ¿La jerarquía se entiende antes que la decoración?
-- ¿Hay suficiente espacio negativo y variedad de composición?
-- ¿Bordes, radios y profundidad son discretos y coherentes?
-- ¿Los assets oficiales y de clientes conservan proporción, color y contexto?
-- ¿El movimiento es lento, breve o funcional y tiene alternativa reducida?
-- ¿La pieza evitaría confundirse con una plantilla tecnológica genérica al ocultar el logo?
+- ¿La pieza se siente creativa y ordenada a la vez incluso al ocultar el logo?
+- ¿Se cargó el módulo correcto y su densidad corresponde al objetivo?
+- ¿La jerarquía precede a la decoración y los acentos están contenidos?
+- ¿Los assets oficiales conservan proporción, color y contexto?
+- ¿La experiencia sigue siendo clara con teclado, en móvil y con movimiento reducido?
 

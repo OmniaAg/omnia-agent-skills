@@ -26,6 +26,10 @@ Incluye:
 
 Skill de identidad visual para reproducir, adaptar y auditar la estética digital de OMNIA en landings, sitios, interfaces, presentaciones y piezas de marca.
 
+### omnia-light-mode
+
+Skill modificadora que transforma contextualmente una interfaz basada en `omnia-aesthetic` de dark mode a light mode, preservando el diseño y reinterpretando únicamente el sistema cromático y el comportamiento del theme switch.
+
 ## Instalación
 
 ### astro-premium-landing
@@ -38,6 +42,12 @@ npx skills add https://github.com/astrolicious/agent-skills --skill astro-premiu
 
 ```bash
 npx skills add https://github.com/astrolicious/agent-skills --skill omnia-aesthetic
+```
+
+### omnia-light-mode
+
+```bash
+npx skills add OmniaAg/omnia-agent-skills --skill omnia-light-mode
 ```
 
 ## También puede utilizarse el formato corto
